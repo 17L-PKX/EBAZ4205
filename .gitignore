@@ -11,32 +11,32 @@
 .Xil/
 
 # ---- Vivado 生成目录 ----
-test/test.cache/
-test/test.runs/
-test/test.sim/
-test/test.hw/
-test/test.ip_user_files/
+**/test.cache/
+**/test.runs/
+**/test.sim/
+**/test.hw/
+**/test.ip_user_files/
 
 # ---- Block Design 生成物（design01.bd 本身保留）----
-test/test.srcs/sources_1/bd/design01/ip/
-test/test.srcs/sources_1/bd/design01/ipshared/
-test/test.srcs/sources_1/bd/design01/synth/
-test/test.srcs/sources_1/bd/design01/sim/
-test/test.srcs/sources_1/bd/design01/hw_handoff/
-test/test.srcs/sources_1/bd/design01/hdl/
-test/test.srcs/sources_1/bd/design01/ui/
-test/test.srcs/sources_1/bd/design01/*.bxml
-test/test.srcs/sources_1/bd/design01/*_ooc.xdc
-test/test.srcs/sources_1/bd/mref/
+**/test.srcs/sources_1/bd/design01/ip/
+**/test.srcs/sources_1/bd/design01/ipshared/
+**/test.srcs/sources_1/bd/design01/synth/
+**/test.srcs/sources_1/bd/design01/sim/
+**/test.srcs/sources_1/bd/design01/hw_handoff/
+**/test.srcs/sources_1/bd/design01/hdl/
+**/test.srcs/sources_1/bd/design01/ui/
+**/test.srcs/sources_1/bd/design01/*.bxml
+**/test.srcs/sources_1/bd/design01/*_ooc.xdc
+**/test.srcs/sources_1/bd/mref/
 
 # ---- SDK 生成物（shell/src 里的代码保留）----
-test/test.sdk/.metadata/
-test/test.sdk/.sdk/
-test/test.sdk/webtalk/
-test/test.sdk/RemoteSystemsTempFiles/
-test/test.sdk/shell_bsp/
-test/test.sdk/*_hw_platform_*/
-test/test.sdk/**/Debug/
+**/test.sdk/.metadata/
+**/test.sdk/.sdk/
+**/test.sdk/webtalk/
+**/test.sdk/RemoteSystemsTempFiles/
+**/test.sdk/shell_bsp/
+**/test.sdk/*_hw_platform_*/
+**/test.sdk/**/Debug/
 
 # ---- 编译/实现产物 ----
 *.o

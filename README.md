@@ -50,27 +50,30 @@ Connect at 115200 8N1 and the prompt `letter:/$` should appear.
 ```text
 .
 ├── docs/
-│   └── traindoc.pdf              Design documentation
-├── test/                         Vivado project
-│   ├── test.xpr                  Vivado project file
-│   ├── test.srcs/
-│   │   ├── sources_1/
-│   │   │   ├── new/
-│   │   │   │   └── led_ctl.v     * PL — LED control module (PWM + blink)
-│   │   │   └── bd/design01/
-│   │   │       └── design01.bd   * Block Design (PS + AXI GPIO + led_ctl)
-│   │   └── constrs_1/new/
-│   │       └── led_ctl.xdc       Pin constraint: led_red -> W14
-│   └── test.sdk/
-│       └── shell/                Xilinx SDK application project
-│           └── src/
-│               ├── helloworld.c  * PS — shell main program + led command
-│               ├── lscript.ld    Linker script (contains the shellCommand section)
-│               ├── shell.c/.h    letter-shell 3.2.4 library
-│               ├── shell_cfg.h   Library configuration (bare-metal mode)
-│               ├── shell_ext.*   Library extension (parameter parsing)
-│               └── platform.c/.h Xilinx template
-└── .gitignore                    Excludes Vivado / SDK build artefacts
+│   ├── OpenColink-horizontal.png  Logo used on the cover page
+│   ├── FormattExample.docx        Document formatting example (Word source)
+│   └── traindoc_formatted.pdf     Design documentation (PDF)
+├── LabTrain/                      Lab / training projects
+│   └── test/                      Vivado project
+│       ├── test.xpr               Vivado project file
+│       ├── test.srcs/
+│       │   ├── sources_1/
+│       │   │   ├── new/
+│       │   │   │   └── led_ctl.v  * PL — LED control module (PWM + blink)
+│       │   │   └── bd/design01/
+│       │   │       └── design01.bd * Block Design (PS + AXI GPIO + led_ctl)
+│       │   └── constrs_1/new/
+│       │       └── led_ctl.xdc    Pin constraint: led_red -> W14
+│       └── test.sdk/
+│           └── shell/             Xilinx SDK application project
+│               └── src/
+│                   ├── helloworld.c * PS — shell main program + led command
+│                   ├── lscript.ld   Linker script (contains the shellCommand section)
+│                   ├── shell.c/.h   letter-shell 3.2.4 library
+│                   ├── shell_cfg.h  Library configuration (bare-metal mode)
+│                   ├── shell_ext.*  Library extension (parameter parsing)
+│                   └── platform.c/.h Xilinx template
+└── .gitignore                     Excludes Vivado / SDK build artefacts
 ```
 
 **The four files marked `*` are the ones written for this project**; everything
@@ -183,4 +186,5 @@ led_ctl/led_red          -> top-level port led_red
 
 - letter-shell: <https://github.com/NevermindZZT/letter-shell>
 - EBAZ4205 resources: <https://github.com/xjtuecho/EBAZ4205>
-- Design documentation: [`docs/traindoc.pdf`](docs/traindoc.pdf)
+- Design documentation: [`docs/traindoc_formatted.pdf`](docs/traindoc_formatted.pdf)
+- Document formatting example: [`docs/FormattExample.docx`](docs/FormattExample.docx)
